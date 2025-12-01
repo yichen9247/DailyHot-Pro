@@ -13,13 +13,11 @@ declare module 'vue' {
   export interface GlobalComponents {
     ElButton: typeof import('element-plus/es')['ElButton']
     ElIcon: typeof import('element-plus/es')['ElIcon']
-    ElPagination: typeof import('element-plus/es')['ElPagination']
     ElResult: typeof import('element-plus/es')['ElResult']
     ElSkeleton: typeof import('element-plus/es')['ElSkeleton']
     ElSkeletonItem: typeof import('element-plus/es')['ElSkeletonItem']
     HomeFooter: typeof import('./src/components/HomeFooter.vue')['default']
     HomeHeader: typeof import('./src/components/HomeHeader.vue')['default']
-    HostItem: typeof import('./src/components/HostItem.vue')['default']
     HotItem: typeof import('./src/components/HotItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

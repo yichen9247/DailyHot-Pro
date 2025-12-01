@@ -12,4 +12,4 @@ export const showToasts = async (type: string, text: string): Promise<void> => {
         ElMessage({ message: text, type: 'warning', plain: true, grouping: true });
     }
 }
-export const openSite = (url: string): Window => open(url);
+export const openSite = (url: string): Window => window.open(url);

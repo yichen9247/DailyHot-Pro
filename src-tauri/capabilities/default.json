@@ -10,7 +10,7 @@
       "identifier": "core:default",
       "allow": [
         {
-          "url": "*"
+          "url": "https://*"
         }
       ]
     }
