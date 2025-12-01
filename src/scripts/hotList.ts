@@ -1,0 +1,148 @@
+import { NewsItem } from "@/types";
+import { reactive, Reactive } from "vue";
+
+export const defaultNewsArr: Reactive<NewsItem[]> = reactive([{
+    label: "哔哩哔哩",
+    name: "bilibili",
+    order: 0,
+    show: true,
+    icon: "/logos/bilibili.png"
+}, {
+    label: "今日头条",
+    name: "toutiao",
+    order: 1,
+    show: true,
+    icon: "/logos/toutiao.png"
+}, {
+    label: "百度热搜",
+    name: "baidu",
+    order: 2,
+    show: true,
+    icon: "/logos/baidu.png"
+}, {
+    label: "百度贴吧",
+    name: "tieba",
+    order: 3,
+    show: true,
+    icon: "/logos/tieba.png"
+}, {
+    label: "稀土掘金",
+    name: "juejin",
+    order: 4,
+    show: true,
+    icon: "/logos/juejin.png"
+}, {
+    label: "豆瓣电影",
+    name: "douban-movie",
+    order: 5,
+    show: true,
+    icon: "/logos/douban.png"
+}, {
+    label: "豆瓣讨论",
+    name: "douban-group",
+    order: 6,
+    show: true,
+    icon: "/logos/douban.png"
+}, {
+    label: "网易新闻",
+    name: "netease-news",
+    order: 7,
+    show: true,
+    icon: "/logos/netease-news.png"
+}, {
+    label: "微信读书",
+    name: "weread",
+    order: 8,
+    show: true,
+    icon: "/logos/weread.png"
+}, {
+    label: "澎湃新闻",
+    name: "thepaper",
+    order: 9,
+    show: true,
+    icon: "/logos/thepaper.png"
+}, {
+    label: "腾讯新闻",
+    name: "qq-news",
+    order: 10,
+    show: true,
+    icon: "/logos/qq-news.png"
+}, {
+    label: "原神新闻",
+    name: "genshin",
+    order: 11,
+    show: true,
+    icon: "/logos/genshin.png"
+}, {
+    label: "崩坏新闻",
+    name: "starrail",
+    order: 12,
+    show: true,
+    icon: "/logos/starrail.png"
+}, {
+    label: "少数派",
+    name: "sspai",
+    order: 13,
+    show: true,
+    icon: "/logos/sspai.png"
+}, {
+    label: "IT之家",
+    name: "ithome",
+    order: 14,
+    show: true,
+    icon: "/logos/ithome.png"
+}, {
+    label: "LOL新闻",
+    name: "lol",
+    order: 15,
+    show: true,
+    icon: "/logos/lol.png"
+}, {
+    label: "36氪",
+    name: "36kr",
+    order: 16,
+    show: true,
+    icon: "/logos/36kr.png"
+}, {
+    label: "NGA新闻",
+    name: "ngabbs",
+    order: 17,
+    show: true,
+    icon: "/logos/ngabbs.png"
+}, {
+    label: "HelloGitHub",
+    name: "hellogithub",
+    order: 18,
+    show: true,
+    icon: "/logos/hellogithub.png"
+}, {
+    label: "知乎日报",
+    name: "zhihu-daily",
+    order: 19,
+    show: true,
+    icon: "/logos/zhihu.png"
+}, {
+    label: "简书新闻",
+    name: "jianshu",
+    order: 20,
+    show: false,
+    icon: "/logos/jianshu.png"
+}, {
+    label: "微博热搜",
+    name: "weibo",
+    order: 21,
+    show: false,
+    icon: "/logos/weibo.png"
+}, {
+    label: "抖音热搜",
+    name: "douyin",
+    order: 22,
+    show: false,
+    icon: "/logos/douyin.png"
+}, {
+    label: "知乎热搜",
+    name: "zhihu",
+    order: 23,
+    show: false,
+    icon: "/logos/zhihu.png"
+}]);

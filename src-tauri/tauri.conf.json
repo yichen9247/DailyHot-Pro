@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "dailyhot-pro",
+  "version": "1.0.0",
+  "identifier": "com.hot.detail",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5173",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "width": 1400,
+        "height": 800,
+        "center": true,
+        "shadow": false,
+        "minWidth": 1000,
+        "minHeight": 600,
+        "devtools": false,
+        "resizable": true,
+        "fullscreen": false,
+        "useHttpsScheme": true,
+        "title": "聚全网每日热榜"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/favicon.ico"
+    ]
+  }
+}

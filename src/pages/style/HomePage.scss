@@ -1,0 +1,30 @@
+main.main-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+    gap: 28px;
+}
+
+@media screen and (max-width: 1500px) {
+    main.main-grid {
+        grid-template-columns: repeat(4, minmax(0px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main.main-grid {
+        grid-template-columns: repeat(3, minmax(0px, 1fr));
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main.main-grid {
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main.main-grid {
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+    }
+}
