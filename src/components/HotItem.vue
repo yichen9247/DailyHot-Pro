@@ -30,6 +30,7 @@
     }
 
     const getHotListsData = async (isNew: boolean = false) => {
+        if (loading.value) return;
         loading.value = true;
         try {
             const response = await getHotLists(props.item.name, isNew, {});
