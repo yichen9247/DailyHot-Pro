@@ -30,7 +30,6 @@
     }
 
     const getHotListsData = async (isNew: boolean = false) => {
-        if (loading.value) return;
         loading.value = true;
         try {
             const response = await getHotLists(props.item.name, isNew, {});
@@ -54,6 +53,10 @@
         });
     }
 
+    const reloadHot = (): void => {
+        if (loading.value) return;
+        getHotListsData(true)
+    }
     onMounted((): void => checkListShow());
 </script>
 
@@ -96,7 +99,7 @@
                                 </svg>
                             </template>
                             <template #extra>
-                                <el-button :icon="Refresh" size="large" @click="getHotListsData(true)">重新加载</el-button>
+                                <el-button :icon="Refresh" size="large" @click="reloadHot()">重新加载</el-button>
                             </template>
                         </el-result>
                     </div>
@@ -114,7 +117,7 @@
                         <el-icon :size="16" @click="openDetailDialog()">
                             <More />
                         </el-icon>
-                        <el-icon :size="16" @click="getHotListsData(true)">
+                        <el-icon :size="16" @click="reloadHot()">
                             <Refresh />
                         </el-icon>
                     </div>
