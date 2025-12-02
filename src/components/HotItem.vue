@@ -55,7 +55,7 @@
 
     const reloadHot = (): void => {
         if (loading.value) return;
-        getHotListsData(true)
+        getHotListsData(true);
     }
     onMounted((): void => checkListShow());
 </script>
